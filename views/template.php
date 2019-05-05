@@ -20,6 +20,10 @@
 			  	 <li>
 			    	<a href="<?php echo BASE_URL; ?>users">Usuários</a>
 			    </li>
+			     <li>
+			    	<a href="<?php echo BASE_URL; ?>clients">Clientes</a>
+			    </li>
+
 			</ul>
 		</div>
 	</div>
@@ -37,6 +41,8 @@
 			<?php $this->loadViewInTemplate($viewName, $viewData); ?>
 		</div>
 	</div>
+
+<script type="text/javascript">var BASE_URL = '<?php echo BASE_URL; ?>';</script>	
 <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery.js">/*3.3.1-min.js*/</script>
 <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/script.js"></script>
 </body>
