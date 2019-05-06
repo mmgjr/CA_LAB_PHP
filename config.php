@@ -22,7 +22,7 @@ if(ENVIRONMENT == "development"){
 
 global $pdo;
 try {
-	$pdo = new PDO("mysql:dbname=".$config['dbname'].";host=".$config['host'],$config['dbuser'],$config['dbpass']);
+	$pdo = new PDO("mysql:dbname=".$config['dbname'].";host=".$config['host'].";charset=utf8",$config['dbuser'],$config['dbpass']);
 } catch (PDOException $e) {
 	echo "ERRO: ".$e->getMessage();	
 }

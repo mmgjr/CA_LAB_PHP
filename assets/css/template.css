@@ -7,7 +7,7 @@ body{
 .leftmenu{
 	width: 200px;
 	background-color: #1f232a;
-	position: absolute;
+	position: fixed;
 	left: 0;
 	top: 0;
 	bottom: 0;
@@ -177,4 +177,61 @@ table td{
 	color: #FFF;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+.pagination{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.pag_item{
+	width: 20px;
+	height: 20px;
+	float: left;
+	border: 1px solid #000;
+	margin-right: 3px;
+	text-align: center;
+	line-height: 20px;
+
+}
+.pag_item a{
+	color: #000;
+	text-decoration: none;
+}
+.pag_active{
+	background-color: #000;
+}
+.pag_active a{
+	color: #FFF;
+}
+#search{
+	width: 100px;
+	float: right;
+	padding:0;
+	height: 25px;
+	background-image: url('../images/search.png');/*Image by SimpleIcon (http://www.simpleicon.com)*/
+	background-repeat: no-repeat;
+	background-size: 15px 15px;
+	background-position: 5px;
+	padding-left: 24px;
+	border-radius: 3px;
+	border: 1px solid #000; 
+}
+.searchresults{
+	width: 250px;
+	background-color: #FFF;
+	position: absolute;
+	border: 1px solid #CCC;
+}
+.si{
+	height: 20px;
+	line-height: 20px;
+	padding-left: 10px;
+	cursor: pointer;
+}
+.si a{
+	text-decoration: none;
+	color: #000;
+	display: block;
+}
+.si:hover{
+	background-color: #EEE;
 }

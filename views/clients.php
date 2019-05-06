@@ -5,6 +5,9 @@
 			</a>
 		</div>
 	<?php endif; ?>
+	
+	<input type="text" name="search" id="search" placeholder="Search Here" data-type="search_clients">
+
 		<table border="0" width="100%">
 			<thead>
 				<tr>
@@ -46,3 +49,17 @@
 				<?php endforeach; ?>	
 			</tbody>
 		</table>
+		<div class="pagination">
+			<?php for ($q = 1; $q <= $p_count; $q++):?>
+				<div class="pag_item <?php echo ($q==$p)?'pag_active':'';?>">
+					<a href="<?php echo BASE_URL;?>clients?p=<?php echo $q;?>">
+						<?php echo $q; ?>
+					</a>
+				</div>
+			<?php endfor; ?>
+		<!--DIV com clear both para jogar as div com float para o alto.-->	
+			<div style="clear: both;"></div>
+		</div>	
+
+<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery.js"></script>
+<script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/script_clients_add.js"></script>
