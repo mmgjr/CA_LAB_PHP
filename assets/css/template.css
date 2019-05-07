@@ -76,6 +76,10 @@ body{
 .menuArea li:nth-child(4){
 	background-image: url('../images/client.png');/*Image By Vectors Market*/
 }
+.menuArea li:nth-child(5){
+	background-image: url('../images/inventory.png');/*Image By Freepik*/
+}
+
 .area{
 	padding: 15px;
 
@@ -107,6 +111,7 @@ body{
 input[type=text],
 input[type=email],
 input[type=password],
+input[type=number],
 select,
 textarea{
 	width: 100%;

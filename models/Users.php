@@ -68,6 +68,13 @@ class Users extends model{
 			return '';
 		}
 	}
+	public function getId(){
+		if(isset($this->userInfo['id'])){
+			return $this->userInfo['id'];
+		}else{
+			return '';
+		}
+	}
 
 	public function findUsersInGroup($id){
 		$sql = $this->pdo->prepare("SELECT COUNT(*) as c FROM users WHERE groups = :id_group");
@@ -118,6 +125,7 @@ class Users extends model{
 			return '0';
 		}
 	}
+
 
 
 	public function getInfo($id,$id_company){
